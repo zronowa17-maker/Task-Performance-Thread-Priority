@@ -11,7 +11,7 @@ namespace Task_Performance_Thread_Priority
     {
         public static void Thread1()
         {
-            for (int loopCount = 0; loopCount < 2; loopCount++)
+            for (int loopCount = 0; loopCount < 3; loopCount++)
             {
                 Thread.Sleep(500);
                 Console.WriteLine("Name of Thread: " + Thread.CurrentThread.Name + " Process = " + loopCount);

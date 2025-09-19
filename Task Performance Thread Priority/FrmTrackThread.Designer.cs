@@ -1,6 +1,6 @@
 ﻿namespace Task_Performance_Thread_Priority
 {
-    partial class Form1
+    partial class FrmTrackThread
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmTrackThread));
             this.lblStatus = new System.Windows.Forms.Label();
             this.btnRun = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -42,7 +42,7 @@
             this.lblStatus.Size = new System.Drawing.Size(266, 42);
             this.lblStatus.TabIndex = 0;
             this.lblStatus.Text = "- Thread start -";
-            this.lblStatus.Click += new System.EventHandler(this.label1_Click);
+            //this.lblStatus.Click += new System.EventHandler(this.label1_Click);
             // 
             // btnRun
             // 
@@ -52,8 +52,9 @@
             this.btnRun.TabIndex = 1;
             this.btnRun.Text = "Run";
             this.btnRun.UseVisualStyleBackColor = true;
+            this.btnRun.Click += new System.EventHandler(this.btnRun_Click);
             // 
-            // Form1
+            // FrmTrackThread
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -62,7 +63,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnRun);
             this.Controls.Add(this.lblStatus);
-            this.Name = "Form1";
+            this.Name = "FrmTrackThread";
             this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();
