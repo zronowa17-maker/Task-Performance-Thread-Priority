@@ -37,6 +37,12 @@ namespace Task_Performance_Thread_Priority
             threadC.Priority = ThreadPriority.AboveNormal;
             threadD.Priority = ThreadPriority.BelowNormal;
 
+
+            threadA.Join();
+            threadB.Join();
+            threadC.Join();
+            threadD.Join();
+
         }
     }
 }
