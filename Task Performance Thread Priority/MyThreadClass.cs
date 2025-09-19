@@ -17,8 +17,18 @@ namespace Task_Performance_Thread_Priority
                 Console.WriteLine("Name of Thread: " + Thread.CurrentThread.Name + " Process = " + loopCount);
             }
         }
+
+        public static void Thread2()
+        {
+            for (int loopCount = 0; loopCount < 6; loopCount++)
+            {
+                Thread.Sleep(1500);
+                Console.WriteLine("Name of Thread: " + Thread.CurrentThread.Name + " Process = " + loopCount);
+            }
+        }
     }
 }
+
 
 
      
