@@ -17,6 +17,7 @@ namespace Task_Performance_Thread_Priority
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new FrmTrackThread());
+
         }
     }
 }

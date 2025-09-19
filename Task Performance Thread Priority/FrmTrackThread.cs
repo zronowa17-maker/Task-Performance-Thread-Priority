@@ -19,7 +19,7 @@ namespace Task_Performance_Thread_Priority
         }
         private void btnRun_Click(object sender, EventArgs e)
         {
-            Console.Clear();
+            
             Console.WriteLine("---Thread Start---");
 
             Thread threadA = new Thread(new ThreadStart(MyThreadClass.Thread1));
@@ -37,11 +37,19 @@ namespace Task_Performance_Thread_Priority
             threadC.Priority = ThreadPriority.AboveNormal;
             threadD.Priority = ThreadPriority.BelowNormal;
 
+            threadA.Start();
+            threadB.Start();
+            threadC.Start();
+            threadD.Start();
 
             threadA.Join();
             threadB.Join();
             threadC.Join();
             threadD.Join();
+
+            Console.WriteLine("----End of Thread---");
+            this.lblStatus.Text = "- End of Thread-";
+
 
         }
     }
