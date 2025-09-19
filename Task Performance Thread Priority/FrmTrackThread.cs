@@ -26,6 +26,16 @@ namespace Task_Performance_Thread_Priority
             Thread threadB = new Thread(new ThreadStart(MyThreadClass.Thread1));
             Thread threadC = new Thread(new ThreadStart(MyThreadClass.Thread2));
             Thread threadD = new Thread(new ThreadStart(MyThreadClass.Thread2));
+            
+            threadA.Name = "Thread A";
+            threadB.Name = "Thread B";
+            threadC.Name = "Thread C";
+            threadD.Name = "Thread D";
+
+            threadA.Priority = ThreadPriority.Highest;
+            threadB.Priority = ThreadPriority.Normal;
+            threadC.Priority = ThreadPriority.AboveNormal;
+            threadD.Priority = ThreadPriority.BelowNormal;
 
         }
     }
